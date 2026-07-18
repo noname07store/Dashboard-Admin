@@ -1,20 +1,285 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🚀 Core Admin Dashboard
 
-# Run and deploy your AI Studio app
+Modern Admin Dashboard built with **React**, **Tailwind CSS**, **Recharts**, and a clean **Bento Grid** interface. Designed for business management, marketplace administration, analytics, and team collaboration.
 
-This contains everything you need to run your app locally.
+![Version](https://img.shields.io/badge/version-2.0.4-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-View your app in AI Studio: https://ai.studio/apps/61d185fd-d47b-4760-8d3f-8d1c15a28b48
+---
 
-## Run Locally
+# ✨ Features
 
-**Prerequisites:**  Node.js
+## 📊 Dashboard
 
+- Business Overview
+- Revenue Statistics
+- Sales Analytics
+- Conversion Rate
+- Active Users
+- Realtime Business Report
+- Interactive Charts
+- KPI Cards
+- Monthly / Weekly / Yearly Reports
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 👥 User Management
+
+- User Management
+- Role Management
+- Permission Management
+- Super Admin
+- Admin
+- Editor
+- Viewer
+- User Status
+- Search & Filter
+- User Activity
+
+---
+
+## 📈 Analytics
+
+- Revenue Analytics
+- Sales Performance
+- Product Performance
+- Visitor Analytics
+- Conversion Tracking
+- Business Insights
+
+---
+
+## 📦 Product Management
+
+- Product List
+- Categories
+- Stock Monitoring
+- Best Selling Products
+- Inventory Overview
+
+---
+
+## 📑 Order Management
+
+- New Orders
+- Completed Orders
+- Pending Orders
+- Cancelled Orders
+- Refund Requests
+
+---
+
+## 💳 Finance
+
+- Revenue Dashboard
+- Transactions
+- Payments
+- Profit Reports
+- Financial Summary
+
+---
+
+## 🔔 Notification Center
+
+- Real-time Notifications
+- System Alerts
+- User Notifications
+- Security Notifications
+
+---
+
+## 📜 Activity Logs
+
+- Login History
+- User Activity
+- Security Logs
+- Payment Logs
+- System Logs
+- Audit Logs
+
+---
+
+## 🔐 Security
+
+- SSL Monitoring
+- Access Control
+- Permission Manager
+- Session Monitoring
+- Security Events
+
+---
+
+## 🎨 UI Features
+
+- Modern Design
+- Bento Grid Layout
+- Responsive Layout
+- Dark Mode
+- Light Mode
+- Interactive Components
+- Beautiful Cards
+- Smooth Animation
+- Professional Sidebar
+
+---
+
+# 🖥 Screenshots
+
+Add your dashboard screenshots here.
+
+```
+public/
+└── preview.png
+```
+
+```md
+![Dashboard Preview](./public/preview.png)
+```
+
+---
+
+# 🛠 Tech Stack
+
+- React
+- Tailwind CSS
+- Recharts
+- React Router
+- React Icons
+- Axios
+- Vite
+
+---
+
+# 📂 Folder Structure
+
+```
+src/
+│
+├── assets/
+├── components/
+├── layouts/
+├── pages/
+├── hooks/
+├── services/
+├── context/
+├── utils/
+├── styles/
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+# 🚀 Installation
+
+Clone repository
+
+```bash
+git clone https://github.com/USERNAME/core-admin-dashboard.git
+```
+
+Enter project
+
+```bash
+cd core-admin-dashboard
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
+
+```bash
+npm run dev
+```
+
+Build production
+
+```bash
+npm run build
+```
+
+Preview production
+
+```bash
+npm run preview
+```
+
+---
+
+# 📱 Responsive
+
+✔ Desktop
+
+✔ Laptop
+
+✔ Tablet
+
+✔ Mobile
+
+---
+
+# 🎯 Suitable For
+
+- Marketplace
+- Digital Store
+- Company Dashboard
+- CRM
+- ERP
+- SaaS
+- Admin Panel
+- Finance Dashboard
+- Analytics Dashboard
+- Inventory Management
+
+---
+
+# 🌍 Browser Support
+
+- Chrome
+- Edge
+- Firefox
+- Safari
+- Opera
+
+---
+
+# 🚀 Deployment
+
+This project can be deployed to:
+
+- Vercel
+- Netlify
+- GitHub Pages
+- Firebase Hosting
+- Docker
+- VPS
+- Nginx
+- Apache
+
+---
+
+# 📄 License
+
+MIT License
+
+---
+
+# 👨‍💻 Developer
+
+**NONAME07**
+
+If you like this project, don't forget to ⭐ Star this repository.
+
+---
+
+## ⭐ Support
+
+If this project helps you, please leave a **Star** on GitHub to support future development.
+
+Made with ❤️ by **NONAME07**
