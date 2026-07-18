@@ -1,0 +1,322 @@
+import { StatCard, User, ActivityLog, SalesData, ProductPerformance, UserRole, LogCategory, LogStatus } from '../types';
+
+export const initialStats: StatCard[] = [
+  {
+    id: '1',
+    title: 'Total Pendapatan',
+    value: 'Rp 142.850.000',
+    change: 12.8,
+    trend: 'up',
+    timeframe: 'vs bulan lalu',
+    icon: 'DollarSign',
+    color: 'from-emerald-500/10 to-teal-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20',
+  },
+  {
+    id: '2',
+    title: 'Transaksi Baru',
+    value: '1.240',
+    change: 8.2,
+    trend: 'up',
+    timeframe: 'vs minggu lalu',
+    icon: 'ShoppingBag',
+    color: 'from-blue-500/10 to-indigo-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20',
+  },
+  {
+    id: '3',
+    title: 'Pengguna Aktif',
+    value: '3.842',
+    change: -2.4,
+    trend: 'down',
+    timeframe: 'vs minggu lalu',
+    icon: 'Users',
+    color: 'from-amber-500/10 to-orange-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20',
+  },
+  {
+    id: '4',
+    title: 'Rasio Konversi',
+    value: '4,15%',
+    change: 1.5,
+    trend: 'up',
+    timeframe: 'vs bulan lalu',
+    icon: 'Activity',
+    color: 'from-rose-500/10 to-pink-500/10 text-rose-600 dark:text-rose-400 border-rose-500/20',
+  },
+];
+
+export const weeklySalesData: SalesData[] = [
+  { name: 'Sen', sales: 45, revenue: 5400000, visitors: 420 },
+  { name: 'Sel', sales: 52, revenue: 6800000, visitors: 490 },
+  { name: 'Rab', sales: 49, revenue: 6100000, visitors: 460 },
+  { name: 'Kam', sales: 63, revenue: 8400000, visitors: 580 },
+  { name: 'Jum', sales: 58, revenue: 7900000, visitors: 550 },
+  { name: 'Sab', sales: 85, revenue: 12100000, visitors: 820 },
+  { name: 'Min', sales: 92, revenue: 13500000, visitors: 910 },
+];
+
+export const monthlySalesData: SalesData[] = [
+  { name: 'Jan', sales: 320, revenue: 42000000, visitors: 3200 },
+  { name: 'Feb', sales: 380, revenue: 49800000, visitors: 3500 },
+  { name: 'Mar', sales: 410, revenue: 53200000, visitors: 3900 },
+  { name: 'Apr', sales: 390, revenue: 51000000, visitors: 3700 },
+  { name: 'Mei', sales: 480, revenue: 62500000, visitors: 4400 },
+  { name: 'Jun', sales: 520, revenue: 71200000, visitors: 4900 },
+  { name: 'Jul', sales: 580, revenue: 81400000, visitors: 5400 },
+  { name: 'Agu', sales: 610, revenue: 88900000, visitors: 5900 },
+  { name: 'Sep', sales: 590, revenue: 83500000, visitors: 5600 },
+  { name: 'Okt', sales: 680, revenue: 98100000, visitors: 6400 },
+  { name: 'Nov', sales: 740, revenue: 112000000, visitors: 7100 },
+  { name: 'Des', sales: 950, revenue: 142850000, visitors: 9500 },
+];
+
+export const yearlySalesData: SalesData[] = [
+  { name: '2022', sales: 3400, revenue: 450000000, visitors: 35000 },
+  { name: '2023', sales: 4800, revenue: 640000000, visitors: 49000 },
+  { name: '2024', sales: 6200, revenue: 890000000, visitors: 65000 },
+  { name: '2025', sales: 8500, revenue: 1240000000, visitors: 89000 },
+  { name: '2026', sales: 9800, revenue: 1512000000, visitors: 112000 },
+];
+
+export const initialUsers: User[] = [
+  {
+    id: 'USR-01',
+    name: 'Budi Santoso',
+    email: 'budi.santoso@admin.com',
+    role: 'Super Admin',
+    status: 'Aktif',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    joinDate: '12 Jan 2024',
+    lastActive: 'Baru saja',
+    permissions: ['all_access', 'read_data', 'write_data', 'delete_data', 'manage_users'],
+  },
+  {
+    id: 'USR-02',
+    name: 'Siti Aminah',
+    email: 'siti.aminah@company.com',
+    role: 'Admin',
+    status: 'Aktif',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    joinDate: '24 Feb 2024',
+    lastActive: '5 menit yang lalu',
+    permissions: ['read_data', 'write_data', 'manage_users'],
+  },
+  {
+    id: 'USR-03',
+    name: 'Rian Hidayat',
+    email: 'rian.hidayat@design.com',
+    role: 'Editor',
+    status: 'Aktif',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    joinDate: '05 Mar 2024',
+    lastActive: '1 jam yang lalu',
+    permissions: ['read_data', 'write_data'],
+  },
+  {
+    id: 'USR-04',
+    name: 'Dewi Lestari',
+    email: 'dewi.lestari@analytics.com',
+    role: 'Viewer',
+    status: 'Aktif',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80',
+    joinDate: '18 Apr 2024',
+    lastActive: 'Dua hari yang lalu',
+    permissions: ['read_data'],
+  },
+  {
+    id: 'USR-05',
+    name: 'Aditya Wijaya',
+    email: 'aditya.wijaya@support.com',
+    role: 'Editor',
+    status: 'Nonaktif',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
+    joinDate: '30 Mei 2024',
+    lastActive: '1 minggu yang lalu',
+    permissions: ['read_data', 'write_data'],
+  },
+  {
+    id: 'USR-06',
+    name: 'Rina Kartika',
+    email: 'rina.kartika@sales.com',
+    role: 'Viewer',
+    status: 'Ditangguhkan',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80',
+    joinDate: '11 Jun 2024',
+    lastActive: '3 minggu yang lalu',
+    permissions: ['read_data'],
+  },
+];
+
+export const initialLogs: ActivityLog[] = [
+  {
+    id: 'LOG-101',
+    timestamp: '11:42:15',
+    user: {
+      name: 'Budi Santoso',
+      email: 'budi.santoso@admin.com',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    },
+    action: 'Mengekspor laporan keuangan kuartal II',
+    category: 'system',
+    status: 'success',
+    ip: '192.168.1.1',
+    details: 'Format PDF, Ukuran: 4.2 MB',
+  },
+  {
+    id: 'LOG-102',
+    timestamp: '11:39:04',
+    user: {
+      name: 'Siti Aminah',
+      email: 'siti.aminah@company.com',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    },
+    action: 'Mengubah hak akses pengguna Rian Hidayat',
+    category: 'security',
+    status: 'warning',
+    ip: '192.168.1.12',
+    details: 'Role diubah dari Viewer ke Editor',
+  },
+  {
+    id: 'LOG-103',
+    timestamp: '11:30:11',
+    user: {
+      name: 'Sistem Pembayaran',
+      email: 'gateway@midtrans.com',
+    },
+    action: 'Transaksi pembayaran berhasil #TX-99843',
+    category: 'transaction',
+    status: 'success',
+    ip: '10.0.4.82',
+    details: 'Nilai: Rp 1.250.000 via BCA Virtual Account',
+  },
+  {
+    id: 'LOG-104',
+    timestamp: '11:15:44',
+    user: {
+      name: 'Rian Hidayat',
+      email: 'rian.hidayat@design.com',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    },
+    action: 'Menambahkan produk baru "Ergonomic Office Chair"',
+    category: 'user',
+    status: 'success',
+    ip: '182.11.90.45',
+    details: 'Kategori: Furniture, Stok: 50 unit',
+  },
+  {
+    id: 'LOG-105',
+    timestamp: '10:55:01',
+    user: {
+      name: 'Sistem Deteksi',
+      email: 'firewall@internal.com',
+    },
+    action: 'Deteksi percobaan login tidak sah berulang',
+    category: 'security',
+    status: 'error',
+    ip: '203.0.113.195',
+    details: 'IP diblokir sementara selama 30 menit',
+  },
+  {
+    id: 'LOG-106',
+    timestamp: '10:48:12',
+    user: {
+      name: 'Dewi Lestari',
+      email: 'dewi.lestari@analytics.com',
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80',
+    },
+    action: 'Mengunduh data performa iklan Google Ads',
+    category: 'system',
+    status: 'info',
+    ip: '110.138.4.15',
+    details: 'Rentang waktu: 30 hari terakhir',
+  },
+];
+
+export const topProducts: ProductPerformance[] = [
+  {
+    id: 'PROD-01',
+    name: 'Gamer Pro Mechanical Keyboard v2',
+    category: 'Aksesoris Komputer',
+    salesCount: 428,
+    revenue: 535000000,
+    stock: 24,
+    trend: 18.5,
+  },
+  {
+    id: 'PROD-02',
+    name: 'Wireless Noise Cancelling Headphones',
+    category: 'Audio & Elektronik',
+    salesCount: 312,
+    revenue: 780000000,
+    stock: 12,
+    trend: 12.4,
+  },
+  {
+    id: 'PROD-03',
+    name: 'Minimalist Desk Mat (Extra Large)',
+    category: 'Aksesoris Meja',
+    salesCount: 285,
+    revenue: 85500000,
+    stock: 98,
+    trend: -3.8,
+  },
+  {
+    id: 'PROD-04',
+    name: 'Ergonomic Office Chair - Mesh Edition',
+    category: 'Furniture Kerja',
+    salesCount: 194,
+    revenue: 485000000,
+    stock: 15,
+    trend: 24.1,
+  },
+  {
+    id: 'PROD-05',
+    name: 'UltraWide Curved Monitor 34"',
+    category: 'Tampilan & Layar',
+    salesCount: 105,
+    revenue: 682500000,
+    stock: 8,
+    trend: 6.2,
+  },
+];
+
+export const roleOptions: { role: UserRole; permissions: string[] }[] = [
+  {
+    role: 'Super Admin',
+    permissions: ['all_access', 'read_data', 'write_data', 'delete_data', 'manage_users'],
+  },
+  {
+    role: 'Admin',
+    permissions: ['read_data', 'write_data', 'manage_users'],
+  },
+  {
+    role: 'Editor',
+    permissions: ['read_data', 'write_data'],
+  },
+  {
+    role: 'Viewer',
+    permissions: ['read_data'],
+  },
+];
+
+export const systemLogActions: { action: string; category: LogCategory; status: LogStatus }[] = [
+  { action: 'Menghapus log aktivitas lama', category: 'system', status: 'info' },
+  { action: 'Sinkronisasi database berhasil', category: 'system', status: 'success' },
+  { action: 'Pembaruan SSL Certificate', category: 'security', status: 'success' },
+  { action: 'Gagal melakukan otentikasi API Key', category: 'security', status: 'warning' },
+  { action: 'Deteksi akses mencurigakan di port 22', category: 'security', status: 'error' },
+  { action: 'Transaksi baru dibuat #TX-99844', category: 'transaction', status: 'success' },
+  { action: 'Pengembalian dana diproses #TX-99512', category: 'transaction', status: 'warning' },
+  { action: 'Pengguna baru mendaftar di sistem', category: 'user', status: 'success' },
+  { action: 'Reset password diajukan oleh pengguna', category: 'user', status: 'info' },
+  { action: 'Profil diperbarui oleh Admin', category: 'user', status: 'success' },
+];
+
+export const systemUsersMock = [
+  { name: 'Budi Santoso', email: 'budi.santoso@admin.com', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80' },
+  { name: 'Siti Aminah', email: 'siti.aminah@company.com', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80' },
+  { name: 'Rian Hidayat', email: 'rian.hidayat@design.com', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80' },
+  { name: 'Dewi Lestari', email: 'dewi.lestari@analytics.com', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80' },
+  { name: 'Aditya Wijaya', email: 'aditya.wijaya@support.com', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80' },
+  { name: 'Rina Kartika', email: 'rina.kartika@sales.com', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80' },
+  { name: 'Sistem Deteksi', email: 'firewall@internal.com' },
+  { name: 'Sistem Pembayaran', email: 'gateway@midtrans.com' }
+];

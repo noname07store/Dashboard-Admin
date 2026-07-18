@@ -1,0 +1,6 @@
+{
+  "name": "Dashboard Admin Modern",
+  "description": "Template dashboard admin responsif dengan desain bento-grid minimalis yang sangat indah, dilengkapi grafik penjualan Recharts, tabel data pengguna searchable, manajemen hak akses, dan logs aktivitas real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
